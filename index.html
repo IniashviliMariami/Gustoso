@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gustoso</title>
+
+    <link href="https://fonts.cdnfonts.com/css/scriptina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top text-body ">
+        <div class="container-fluid justify-content-evenly" >
+            <a class="navbar-brand" href="#">Gustoso</a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: white;">
+                <span class="navbar-toggler-icon " style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3E%3Cpath stroke=%27white%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0 justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light active"  aria-current="page" href="#">WELCOME</a>
+                    </li>
+                    <li class="nav-dividing-line">~</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MENU</a>
+                    </li>
+                    <li class="nav-dividing-line">~</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">RESERVATIONS</a>
+                    </li>
+                    <li class="nav-dividing-line">~</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NEWS</a>
+                    </li>
+                    <li class="nav-dividing-line">~</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav justify-content-evenly" id="social-icon" style="width: 100px;margin:0 0 0 20px">
+                    <li class="nav-item">
+                        <a href="">
+                            <svg 
+                               xmlns="http://www.w3.org/2000/svg"
+                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                               width="16px" height="13px">
+                              <path fill-rule="evenodd"  fill="rgb(239, 235, 228)"
+                               d="M16.000,1.495 L14.500,2.992 C14.500,2.992 14.500,2.856 14.500,3.241 C14.500,3.515 14.456,3.776 14.392,4.029 C14.357,6.088 13.699,8.818 11.000,10.973 C5.689,15.210 -0.000,11.471 -0.000,11.471 C4.500,11.471 4.500,9.974 4.500,9.974 C3.500,9.974 1.500,7.980 1.500,7.980 C2.000,8.478 3.000,7.980 3.000,7.980 C0.500,6.483 0.500,4.987 0.500,4.987 C1.000,5.485 2.000,4.987 2.000,4.987 C-0.500,2.992 1.000,0.498 1.000,0.498 C1.500,2.992 8.000,3.989 8.000,3.989 L8.083,3.948 C8.032,3.720 8.000,3.235 8.000,2.992 C8.000,1.201 9.455,-0.001 11.250,-0.001 C12.238,-0.001 13.112,0.448 13.708,1.142 L14.000,0.996 L15.500,-0.001 L14.500,1.994 L16.000,1.495 Z"/>
+                           </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="8px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(239, 235, 228)"
+                                d="M3.000,15.000 L3.000,8.000 L-0.000,7.999 L-0.000,6.000 L3.000,6.000 L3.000,2.999 C3.000,0.661 4.182,0.004 6.229,0.004 C7.209,0.004 7.725,0.111 7.971,0.145 L7.971,2.511 L6.235,2.511 C5.122,2.511 5.000,4.209 5.000,5.000 L5.000,6.000 L8.000,6.000 L7.500,7.999 L5.000,7.999 L5.000,14.999 L3.000,15.000 Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="14px" height="16px">
+                                <path fill-rule="evenodd"  fill="rgb(239, 235, 228)"
+                                d="M11.500,15.999 L2.500,15.999 C1.119,15.999 -0.000,14.880 -0.000,13.499 L-0.000,2.499 C-0.000,1.118 1.119,-0.001 2.500,-0.001 L11.500,-0.001 C12.881,-0.001 14.000,1.118 14.000,2.499 L14.000,13.499 C14.000,14.880 12.881,15.999 11.500,15.999 ZM7.000,3.996 C4.793,3.996 3.004,5.787 3.004,7.997 C3.004,10.205 4.793,11.997 7.000,11.997 C9.206,11.997 10.995,10.205 10.995,7.997 C10.995,5.787 9.206,3.996 7.000,3.996 ZM12.000,1.999 L10.000,1.999 L10.000,3.999 L12.000,3.999 L12.000,1.999 ZM13.000,8.999 C13.000,8.999 13.000,8.999 13.000,8.999 L13.000,8.999 L13.000,6.999 L12.000,6.999 L12.000,7.276 C11.984,7.267 11.966,7.264 11.950,7.255 C11.965,7.420 11.997,7.580 11.997,7.749 C11.997,10.647 9.760,12.996 7.000,12.996 C4.240,12.996 2.002,10.647 2.002,7.749 C2.002,7.580 2.035,7.420 2.049,7.255 C2.034,7.264 2.015,7.267 2.000,7.276 L2.000,6.999 L1.000,6.999 L1.000,8.999 L1.000,8.999 C1.000,8.999 1.000,8.999 1.000,8.999 L1.000,12.999 C1.000,14.103 1.895,14.999 3.000,14.999 L11.000,14.999 C12.104,14.999 13.000,14.103 13.000,12.999 L13.000,8.999 Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header-section  d-flex flex-column align-items-center justify-content-center text-center gap-3 p-4">
+            <h1 class="header-h1 display-4 fw-bold ">Pastry with love</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="193" height="15">
+                <path fill="none" stroke="white" stroke-width="2" stroke-dasharray="8, 16" d="M1,1 C26,1 26,10 49,10 C71,10 78,1 96,1 C113,1 125,10 143,10 C160,10 167,1 191,1" />
+            </svg>
+            <p class="header-p fs-5">We're bringing you fresh ingredients every <br> day in ways you can't resist.</p>
+            <button class="btn  custom-hover-btn fw-bold">
+                OUR MENU
+            </button>
+        </div>
+    </header>
+    <section>
+        <div class="py-5" style="background-image: url('assets/section1bg.jpg');">
+        <img src="assets/line2.png" class="position-absolute top-100 start-50 translate-middle  " alt="" style="width: 100%;height: 280px;">
+        <div class="container-fluid">
+            <div class="row align-items-center pt-sm-5">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div>
+                        <h1 class="mb-3 display-4 d-flex justify-content-center align-items-center" style="font-family:'Alegreya', serif ;color:#56534c;">Art of cakes</h1>
+                        <p class="lead d-flex justify-content-center align-items-center" style="font-family: 'Alegreya', serif; color: #a47d5e;">WE CREATED DELICIOUS MEMORIES</p>
+                        <p class="text-secondary text-center mt-5 " style="font-family: 'ProximaNovaCondensed';color:#53504a;font-size: 13px;">
+                            Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.<br>
+                            Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.<br>
+                            Maecenas tempus, tellus eget condimentum rhoncus, sem quam<br>
+                            semper libero, sit amet adipiscing sem neque sed.
+                        </p>
+                        <h3 class="my-4 d-flex justify-content-center align-items-center" style="font-family:'Alegreya', serif ;color:#56534c;">Chef Cook</h3>
+                        <div class="d-flex align-items-center justify-content-center gap-4">
+                            <div class="text-center">
+                                <hr class="m-0">
+                                <p class="my-1 text-muted fs-5">Benito</p>
+                                <hr class="m-0">
+                            </div>
+                            <img src="assets/shef.png" alt="Chef Benito" class="rounded-circle" style="width: 100px; height: 100px;">
+                            <div class="text-center">
+                                <hr class="m-0">
+                                <p class="my-1 text-muted fs-5">Gaspare</p>
+                                <hr class="m-0">
+                            </div>
+                        </div>
+                        <div class="text-center" style="font-family: 'Scriptina', cursive;color: #cda482;">
+                            <p class="d-flex justify-content-start m-0"><span style="color: gray;font-size: 50px;padding-left: 60px;">“</span></p>
+                            <h4 class="m-0">Unique creations for unique <br>occasions.</h4>
+                            <p class="d-flex justify-content-end m-0"><span style="color: gray;font-size: 50px;padding-right: 60px;">”</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <div class="row row-cols-2 g-3 ">
+                        <div class="col d-flex justify-content-end ">
+                            <img class="img-fluid img-zoom rounded " src="assets/75b6d783-a31c-4bbf-b19a-233caa800b0a.jpg" alt="Cake Image 1">
+                        </div>
+                        <div class="col d-flex justify-content-start">
+                            <img class="img-fluid img-zoom rounded" src="assets/80e2009e-89df-41d9-bae7-6a146c5c96cb.jpg" alt="Cake Image 2">
+                        </div>
+                        <div class="col d-flex justify-content-end">
+                            <img class="img-fluid img-zoom rounded" src="assets/dbeda11c-b559-4742-b6bd-c9a8ed11d91c.jpg" alt="Cake Image 3">
+                        </div>
+                        <div class="col d-flex justify-content-start">
+                            <img class="img-fluid img-zoom rounded" src="assets/a6e10a8b-bf02-4bbd-8961-50089dce4cd9.jpg" alt="Cake Image 4">
+                        </div>
+                    </div>
+                    <img src="assets/tespng.png" class="position-absolute top-50 start-50 translate-middle" alt="Overlay Image" style="z-index: 10; background-color: rgba(255, 235, 205, 0); opacity: 0.9; border: none;">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section >
+        <div class="container-fluid ">
+            <div class="row d-flex align-items-center justify-content-center  " style="background-image: url('assets/section3.png'); background-size: cover; background-position: center; height: 100vh;padding: 0 20px;">
+                <div class="col-lg-6 col-md-6 col-sm-12   d-flex justify-content-end align-items-end flex-column  custom-bgr"  style="background-image: url('assets/pancake.png'); background-repeat: no-repeat; background-size: contain; background-position: center; ">
+                        <div class="col-lg-6 col-md-6 col-sm-12  text-md-start  d-flex flex-column justify-content-center  " >
+                            <h1 class="pt-5 fs-size" style="color: #5c5955; font-family: 'Alegreya', serif;padding-top: 10px;">
+                                <strong>Tasty pancakes</strong>
+                            </h1>
+                            <p class=" text-uppercase text-season  " style="color: #a47d5e; font-family: 'Alegreya', serif;">
+                                <strong >Season Favourite</strong>
+                            </p>
+                            <p class="text-muted p-text-size" style="font-family: ProximaNovaCondensed; padding-right: 10px; ">
+                                Maecenas nec odio et ante tincidunt tempus. Donec  
+                                <br>vitae sapien ut libero venenatis faucibus. Nullam quis 
+                                <br>ante. Etiam sit amet orci eget eros faucibus.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mt-md-0  mt-sm-5 " id="carousel-container" style=" position: relative; padding-right: 50px;">
+                            <div id="carouselExample" class="carousel " data-bs-ride="carousel" >
+                                <div class="carousel-inner  d-flex justify-content-center " style="height: 130px;">
+                                <div class="carousel-item active d-flex align-items-center " >
+                                    <img src="assets/Berries.png" class="rounded-circle img-fluid carousel-image transition " style="width: 50px; height: 50px;" alt="Berries">
+                                </div> 
+                                <div class="carousel-item  d-flex align-items-center justify-content-center">
+                                    <img src="assets/egg.png" class="rounded-circle img-fluid carousel-image transition" style="width: 50px; height: 50px;" alt="egg">
+                                </div>
+                                <div class="carousel-item d-flex align-items-center justify-content-center">
+                                    <img src="assets/Berries.png" class="rounded-circle img-fluid carousel-image transition" style="width:50px; height: 50px;" alt="Berries">
+                                </div>
+                                <div class="carousel-item d-flex align-items-center justify-content-center">
+                                    <img src="assets/egg.png" class="rounded-circle img-fluid carousel-image transition" style="width: 50px; height: 50px;" alt="egg">
+                                </div>
+                                <div class="carousel-item d-flex align-items-center justify-content-center">
+                                    <img src="assets/Sandwich.png" class="rounded-circle img-fluid carousel-image transition" style="width: 50px; height:50px;" alt="Sandwich">
+                                </div>
+                                <div class="carousel-item d-flex align-items-center justify-content-center">
+                                    <img src="assets/Berries.png" class="rounded-circle img-fluid carousel-image transition " style="width: 50px; height: 50px;" alt="Berries">
+                                </div>
+                                <div class="carousel-item d-flex align-items-center justify-content-center">
+                                    <img src="assets/egg.png" class="rounded-circle img-fluid carousel-image transition" style="width: 50px; height: 50px;" alt="egg">
+                                </div>
+                                </div>
+                                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev" >
+                                    <img src="assets/chevron-back-circle-outline.svg" alt="back-icon"  style="width: 20px;margin-right:20px">
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next " type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                    <img src="assets/chevron-forward-circle-outline.svg" alt="back-icon" style="width: 20px;margin-left: 20px;">
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    <img src="assets/mins.png" class="img-fluid position-absolute shadow-lg p-0 responsive-img d-none d-sm-block bg-none bg-none bg-sm-block mins-box" alt="mins"  style="width: 150px; height: 150px; object-fit: cover;transform: translate(20%, -140%);">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid  " style="background-image: url('assets/img4section.png'); background-size: cover; background-repeat: no-repeat; height: 100vh;">
+            <div class="row d-flex justify-content-evenly align-items-center  h-100 ">
+                <div class="col-lg-4 col-md-6  left-box-padding ">
+                    <div class="card  bg-transparent border-0 "  >
+                        <ul class="list-group pt-4 ">
+                            <li class="list-group-item bg-transparent text-center border-0  " style="font-family: 'Alegreya', serif; font-size: 40px;color: rgb(225, 221, 221);">
+                                Breakfast
+                                <p class="fs-6 text-uppercase border-0 p-0" style="color: #c8a593;">7am Breakfast? we’re open!</p>
+                            </li>
+                            <li class="list-group-item bg-transparent text-center border-0 p-0 " style="font-family: 'Alegreya', serif; font-size: 20px;color: rgb(225, 221, 221);">
+                                Full breakfast
+                                <p class="fs-6 p-0 m-0" style="color: #c2beba;">ut tortor, et risus, vulputate pretium</p>
+                            </li>
+                            <li class="list-group-item bg-transparent text-center border-0 p-0 " style="font-family: 'Alegreya', serif; font-size: 30px; color: #dfc691;">
+                                $12.49
+                            </li>
+                            <li class="list-group-item bg-transparent text-center border-0 p-0">
+                                <img src="assets/ვექტორი.png" alt="Icon" style="width: 60px; height: 25px;">
+                            </li>
+                            <li class="list-group-item mt-3 bg-transparent text-center border-0 p-0" style="font-family: 'Alegreya', serif; font-size: 20px;color: rgb(225, 221, 221);">
+                                Toast & Jam
+                                <p class="fs-6 p-0 m-0" style="color: #c2beba; font-size: 12px;">Suspendisse, tempus, interdum</p>
+                            </li>
+                            <li class="list-group-item bg-transparent text-center border-0  p-0 mt-2" style="font-family: 'Alegreya', serif; font-size: 30px; color: #dfc691;">
+                                $4.90
+                            </li>
+                            <li class="list-group-item bg-transparent text-center border-0 p-0">
+                                <img src="assets/ვექტორი.png" alt="Icon" style="width: 60px; height: 25px;">
+                            </li>
+                            <li class="list-group-item mt-3 bg-transparent text-center border-0 p-0" style="font-family: 'Alegreya', serif; font-size: 20px;color: rgb(225, 221, 221);">
+                                Muffins
+                                <p class="fs-6 m-0" style="color: #c2beba; font-size: 12px;">Fusce eget dui sodales est</p>
+                            </li>
+                            <li class="list-group-item bg-transparent text-center border-0 p-0 mt-2 " style="font-family: 'Alegreya', serif; font-size: 30px; color: #dfc691;">
+                                $3.95
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 position-relative d-none d-sm-block ">
+                    <div class="shadow p-3 mb-5 bg-body-tertiary shadow-transparent-black position-relative hover-card-book" 
+                        style="top: -4%; left:10% ;background-image: url('assets/cardRead1.png'); background-size: cover; background-position: center; width: 310px;height: 425px;">
+                        <div class="card text-center bg-transparent border-0 d-flex align-items-center">
+                            <h5 class="card-title" style="color: #56534c; font-family: 'Alegreya', serif; font-size: 30px; margin-top: 100px;">
+                                Your morning <br> Escape with Flair
+                            </h5>
+                            <p class="card-text mt-5" style="color: #56534c; font-family: 'Alegreya', serif; font-size: 11px; letter-spacing: 1px;">
+                                Donec vitae sapien ut libero venenatis faucibus. <br>
+                                Nullam quis ante. Etiam sit amet orci eget eros <br>
+                                faucibus tincidunt. Duis leo.
+                            </p>
+                            <a href="#" class="btn custom-hover rounded-0 mb-5">Read</a>
+                        </div>
+                    </div>
+                    <div class="shadow p-3 mb-5 bg-body-tertiary shadow-top-black  position-absolute hover-card-book" 
+                        style="top: -1.5%; left:7%; background-image: url('assets/cardread.png'); background-size: cover; background-position: center;width: 320px;height: 440px;">
+                        <div class="card text-center bg-transparent border-0 d-flex align-items-center">
+                            <h5 class="card-title" style="color: #56534c; font-family: 'Alegreya', serif; font-size: 30px; margin-top: 100px;">
+                                Your morning <br> Escape with Flair
+                            </h5>
+                            <p class="card-text mt-5" style="color: #56534c; font-family: 'Alegreya', serif; font-size: 11px; letter-spacing: 1px;">
+                                Donec vitae sapien ut libero venenatis faucibus. <br>
+                                Nullam quis ante. Etiam sit amet orci eget eros <br>
+                                faucibus tincidunt. Duis leo.
+                            </p>
+                            <a href="#" class="btn custom-hover rounded-0 mb-5">Read</a>
+                        </div>
+                    </div>
+                    <div class="shadow p-3 mb-5 bg-body-tertiary shadow-top-black position-absolute hover-card-book" 
+                        style="top: -3%; left:-0%; background-image: url('assets/cardread.png'); background-size: cover; background-position: center;width: 335px;height: 460px;">
+                        <div class="card text-center bg-transparent border-0 d-flex align-items-center">
+                            <h5 class="card-title" style="color: #56534c; font-family: 'Alegreya', serif; font-size: 30px; margin-top: 120px;">
+                                Your morning <br> Escape with Flair
+                            </h5>
+                            <p class="card-text mt-5" style="color: #56534c; font-family: 'Alegreya', serif; font-size: 11px; letter-spacing: 1px;">
+                                Donec vitae sapien ut libero venenatis faucibus. <br>
+                                Nullam quis ante. Etiam sit amet orci eget eros <br>
+                                faucibus tincidunt. Duis leo.
+                            </p>
+                            <a href="#" class="btn custom-hover rounded-0 mb-5">Read</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid" style="background-image: url(assets/bgSection.png); background-size: cover; background-repeat: no-repeat; padding-top: 10px;">
+            <div class="row row-sm ">
+                <div class="col-md-4 pt-5">
+                    <div class="info-section">
+                        <img src="assets/img23 copy.jpg" alt="Icon">
+                        <h5>Class aptent</h5>
+                        <p>Quot alienum persecuti ut eam, nam <br> ad atqui primis nusquam.</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <img src="assets/img24 copy - Copy.jpg" alt="Icon">
+                        <h5>Nulla eget</h5>
+                        <p>Nullam dictum felis eu pede mollis <br> pretium Integer tincidunt.</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <img src="assets/img25copy.jpg" alt="Icon">
+                        <h5>Sed nibh purus</h5>
+                        <p>Aenean eleifend tellus leo ligula, <br> porttitor eu, consequat vitae.</p>
+                    </div>
+                </div>
+                <div class="col-md-5  text-center">
+                    <div class="text-center mb-4 pt-5">
+                        <h1 class="recipe-title">The Jibarito Sandwich</h1>
+                        <p class="recipe-subtitle">THE BEST SANDWICH YOU'VE EVER TASTED!</p>
+                    </div>
+                    <div class="position-relative d-inline-block " style="padding-top: 30px;">
+                        <img src="assets/sandwichfromfooter.png" 
+                            class="img-fluid shadow" 
+                            alt="Sandwich" 
+                            style="border: 10px solid white;">
+                        <button class="full-recipe-btn position-absolute"
+                                style="bottom: -3%; left: -2%; padding: 10px 17px; background-color: #f9f9f5; color: #dfc691; border: 2px dashed #dfc691; transition: transform 0.3s ease;">
+                            <a href="#" style="text-decoration: none; color: inherit;">Full Recipe</a>
+                        </button>
+                        <div class="col-md-3 col-sm-6 text-center mt-4 mt-md-0 d-flex d-none d-sm-block flex-column position-absolute mins-position">
+                            <div class="mb-2 border d-flex align-items-center justify-content-center flex-column custom-card-conteiner" 
+                                style="width: 150px; height: 150px;">
+                                <p class="prep-time">PREP</p>
+                                <span class="highlighted-time">
+                                    <span class="custom-number-hover">15</span><br>
+                                    <span style="color: #53504a;">mins</span>
+                                </span>
+                            </div>
+                            <div class="mb-2 border d-flex align-items-center justify-content-center flex-column custom-card-conteiner" 
+                                style="width: 150px; height: 150px;">
+                                <p class="cook-time">COOK</p>
+                                <span class="highlighted-time">
+                                    <span class="custom-number-hover">35</span><br>
+                                    <span style="color: #53504a;">mins</span>
+                                </span>
+                            </div>
+                            <div class="ready-time border d-flex align-items-center justify-content-center flex-column custom-card-conteiner" 
+                                style="width: 150px; height: 150px;">
+                                <p class="ready-time">READY IN</p>
+                                <span class="highlighted-time">
+                                    <span class="custom-number-hover">50</span><br>
+                                    <span style="color: #53504a;">mins</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-menu">
+            <div class="container">
+                <div class="row align-items-center flex-md-column flex-lg-row " style="padding-top:100px;">
+                    <div class="col-md-5 footer-links text-right">
+                        <hr>
+                        <a href="#" class="footer-link">OUR MENU</a> 
+                        <span class="custom-icon-pad">~</span> 
+                        <a href="#" class="footer-link">GALLERY</a> 
+                        <span class="custom-icon-pad">~</span> 
+                        <a href="#" class="footer-link">CULTURE</a>
+                        <hr>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <h5 class="custom-footer-logo">Gustoso</h5>
+                    </div>
+                    <div class="col-md-5 footer-links text-left">
+                        <hr>
+                        <a href="#" class="footer-link">EVENTS</a> 
+                        <span class="custom-icon-pad">~</span> 
+                        <a href="#" class="footer-link">CATERING</a> 
+                        <span class="custom-icon-pad">~</span> 
+                        <a href="#" class="footer-link">VISIT US</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+     
